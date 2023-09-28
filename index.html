@@ -292,9 +292,9 @@
     form.onsubmit = (e) =>
       onSubmit(e)
         .then(() => {
-          document.getElementById("name").innerText = "";
-          document.getElementById("email").innerText = "";
-          document.getElementById("comments").innerText = "";
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("comments").value = "";
           document.getElementById("modal-close").click();
         })
         .catch((err) => console.log(err))
